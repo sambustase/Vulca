@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c0b0b8100b.js" crossorigin="anonymous"></script>
+    <title>VulcAhora</title>
+</head>
+<body>
+    <nav id="navBar" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-light" href="#carouselExample"><img src="./assets/img/Blue Minimalist Car Tire Shop Logo.png" class="icon" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#carouselExample">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/Loud or Noisy Tires.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/Inflado de neumáticos de automóviles con aire comprimido_ _ Foto Premium.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/ALIGNMENT NEEDED.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+    
+            <!-- Texto fijo superpuesto -->
+            <div class="carousel-caption-custom text-white">
+                <h2>Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nemo, expedita tempora ipsum quibusdam odio? Quae fugiat ipsa molestias incidunt vero labore a exercitationem pariatur reprehenderit, autem officia ut eligendi!</p>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section id="servicios" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Servicios</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img src="./assets/img/Talleres moviles _ Valsat.jpg" class="card-img-top" alt="Servicio 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Vulcanización a Domicilio</h5>
+                                <p class="card-text">Servicio de reparación de neumáticos en el lugar donde lo necesites, sin necesidad de desplazarte. Rápido y confiable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img src="./assets/img/Reparador arreglando el neumático del automóvil tratando de quitar el clavo del agujero _ Foto Premium.jpg" class="card-img-top" alt="Servicio 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Reparación de Neumáticos</h5>
+                                <p class="card-text">Soluciones rápidas para pinchazos, cortes y problemas de baja presión en tus neumáticos, con la mejor tecnología y materiales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Íconos de contacto flotantes -->
+        <div class="contact-icons">
+            <a href="tel:+56931049234" class="phone" aria-label="Llamar por Teléfono">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <a href="https://wa.me/56930149234" target="_blank" aria-label="Enviar mensaje por WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <section id="contacto" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contáctanos</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu número de teléfono" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn button">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<style>
+    #navBar{
+        background-color: #548078;
+        color: #ffffff;
+        height: 60px;
+    }
+
+    .icon{
+        width: 80px;
+        height: 80px;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 600px; /* Ajusta la altura según tus necesidades */
+        object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
+    }
+
+    .carousel-caption-custom {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(50, 45, 45, 0.8); /* Fondo negro con 50% de transparencia */
+        border-radius: 10px;
+    }
+            
+    .contact-icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .contact-icons a {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: #25D366; /* Color verde de WhatsApp */
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-icons a.phone {
+        background-color: #007bff; /* Color azul para el icono de teléfono */
+    }
+
+    .contact-icons a:hover {
+        opacity: 0.8;
+    }       
+    .button{
+        background-color: #548078;
+        color: #ffffff;
+    }
+</style>
