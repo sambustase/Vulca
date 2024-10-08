@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    background-color: #F5F5F5; /* Fondo gris claro */
+    color: #333333; /* Texto principal gris oscuro */
+    font-family: Arial, sans-serif;
+}
+
+#navBar {
+    background-color: #1E88E5; /* Azul brillante */
+    color: #ffffff;
+    min-height: 60px; /* Altura mínima por defecto */
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+}
+
+/* Ajuste del carrusel */
+.carousel-item img {
+    width: 100%;
+    height: 400px; /* Altura para pantallas grandes */
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px; /* Altura para tablets y móviles */
+    }
+}
+
+/* Estilo del contenedor del texto en el carrusel */
+.carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con mayor transparencia */
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%; /* Ancho predeterminado */
+}
+
+.carousel-caption-custom h2 {
+    font-size: 2rem; /* Tamaño predeterminado */
+    color: #FFC107; /* Color de acento */
+}
+
+@media (max-width: 768px) {
+    .carousel-caption-custom {
+        width: 80%;
+        padding: 5px; /* Menos padding para evitar que el texto se expanda demasiado */
+    }
+
+    .carousel-caption-custom h2 {
+        font-size: 1.5rem; /* Tamaño más pequeño en pantallas medianas */
+    }
+
+    .carousel-caption-custom p {
+        font-size: 0.875rem; /* Ajusta el tamaño del párrafo si es necesario */
+        line-height: 1.2; /* Reduce el espacio entre líneas */
+        color: #F5F5F5; /* Texto más claro */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption-custom {
+        width: 90%; /* Más ancho para pantallas muy pequeñas */
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .carousel-caption-custom h2 {
+        font-size: 1.25rem; /* Tamaño reducido para móviles muy pequeños */
+    }
+}
+
+/* Estilos de los iconos de contacto */
+.contact-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.contact-icons a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #1bb045; /* Azul claro */
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icons a.phone {
+    background-color: #0D47A1; /* Azul más oscuro para teléfono */
+}
+
+.contact-icons a:hover {
+    opacity: 0.8;
+}
+
+/* Estilos de la sección de servicios */
+#servicios h2 {
+    color: #1E88E5; /* Azul brillante */
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para un estilo moderno */
+    background-color: #ffffff;
+}
+
+.card h5 {
+    color: #0D47A1; /* Azul más oscuro */
+}
+
+.card-text {
+    color: #666666; /* Texto gris medio */
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px; /* Agrega espacio entre tarjetas en dispositivos móviles */
+    }
+}
+
+/* Estilos del formulario de contacto */
+#contacto h2 {
+    color: #1E88E5; /* Azul brillante */
+}
+
+#contacto .form-label {
+    color: #666666; /* Gris medio para las etiquetas */
+}
+
+#contacto .form-control {
+    border-color: #42A5F5; /* Borde azul claro */
+}
+
+#contacto .form-control:focus {
+    border-color: #1E88E5; /* Borde azul más intenso al enfocar */
+    box-shadow: 0px 0px 5px rgba(30, 136, 229, 0.3);
+}
+
+@media (max-width: 768px) {
+    #contacto .col-md-6 {
+        width: 100%; /* Asegura que el formulario ocupe todo el ancho en móviles */
+    }
+}
+
+/* Estilo del botón */
+.button {
+    background-color: #0D47A1; /* Azul más oscuro */
+    color: #ffffff;
+    border: none;
+}
+
+.button:hover {
+    background-color: #1E88E5; /* Azul brillante al pasar el ratón */
+}
